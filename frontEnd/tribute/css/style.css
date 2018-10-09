@@ -1,0 +1,123 @@
+body{
+	height: 2600px;
+	background-color: #2e2e2e;
+	display: block;
+
+    font-family: 'Lobster', cursive;
+
+    font-family: 'Kaushan Script', cursive;
+
+/*url("../images/bg2.jpg") no-repeat center center fixed;
+	background-size: cover;*/
+}
+@media screen and (max-width: 1060px) {
+
+    #primary { width:67%; }
+
+    #secondary { width:30%; margin-left:3%;}  
+
+}
+@media screen and (max-width: 768px) {
+
+    #primary { width:100%; }
+
+    #secondary { width:100%; margin:0; border:none; }
+
+}
+h1{
+	color:white;
+	text-align: center;
+}
+p{
+	text-align: justify;
+	font-size: 28px;
+	color: antiquewhite;
+}
+
+.image2{
+	height: 400px;
+	width: 400px;
+}
+img{
+	
+	max-width: 100%;
+  display: block;
+  height: auto;
+}
+#image{
+	 max-width: 100%;
+	height: auto;
+	 display: block;
+	width: 1402px;
+	border: 4px solid black;
+}
+.image3{
+	height: 392px;
+	width: 392px;
+	border: 4px solid black;
+	float: right;
+}
+.image4{
+	height: 392px;
+	width: 392px;
+	border: 4px solid black;
+	
+}
+#img-caption{
+	
+	
+	height:400px;
+}
+.le{
+	/*position: inherit;*/
+}
+.left{
+	float: left;
+	left: 0;
+}
+.right{
+	float: right;
+}
+.dp{
+	text-align: left;
+	margin-top: 45px;
+	margin-bottom: 0;
+}
+
+.p1{
+	color: black;
+	text-align: right;
+	margin-top: 100px;
+}
+
+#tribute-info{
+	background-color: white;
+	height:400px;
+	max-width: 100%;
+  width: 100%;
+  display: inline-block;
+}
+.last{
+	text-align: center;
+	color: whitesmoke;
+}
+.documentary{
+	
+	height:400px;
+
+}
+.footer{
+	background-color: white;
+	height:400px;
+
+}
+.anu{
+	margin-bottom: 0px;
+	font-size: 32px;
+	text-align: center;
+    font-family: 'Kaushan Script', cursive;
+
+    font-family: 'Acme', sans-serif;
+
+
+}
