@@ -1,0 +1,156 @@
+<html>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+	<head>
+		<title>Survey Form</title>
+		<link rel="stylesheet" href="style/style.css">
+	</head>
+	
+	<body>
+		<div class="upper">
+			<h1 id="title">SURVEY FORM</h1>
+		
+			<p id="description">We value your feedback. Kindly fill it so that we can improve!</p>
+			
+			<form id="survey-form" name="dkld">
+				<fieldset>
+					
+					<legend>Personal Details</legend>
+					
+					<div style="overflow-x:auto;">
+					<table>
+				
+						<tr>
+						
+							<td><label id="name-label">Enter Name: </label></td>
+						
+							<td><input type="text" id="name" placeholder="Enter First Name" required></td>
+				
+							<td><input type="text" placeholder="Enter Middle Name" required></td>
+				
+							<td><input type="text" placeholder="Enter Last Name" required>
+							</td>
+						</tr>
+					
+						<tr>
+						
+							<td><label id="email-label">Email: </label></td>
+						
+							<td colspan="3"><input type="email"  id="email" size="73" required placeholder="eg - abcd@blabla.com" pattern=".+@+.+.com" title="Must be an email address"></td>
+						
+						</tr>
+					
+						<tr>
+						
+							<td><label>DOB: </label></td>
+							
+							<td><input type="date" required></td>
+						
+						</tr>
+						
+						<tr>
+						
+							<td>Occupation:</td>
+							
+							<td id="dropdown"><select name="" required>
+								
+								<option>Student</option>
+								<option>Professional</option>
+								<option>Others</option>
+								</select></td>
+						</tr>
+						
+						<tr>
+						
+							<td>Contact No.:</td>
+							<td><input type="tel"  maxlength="10" pattern="^\d{4}-\d{3}-\d{4}$" required></td>
+						</tr>
+						<tr>
+							
+							<td>Gender:</td>
+							<td><label for="male">Male</label>
+							 <input type="radio" name="gender" id="male" value="male"></td>
+							<td>
+								<label for="female">Female</label>
+  							<input type="radio" name="gender" id="female" value="female">
+  							 </td>
+						
+							<td>
+								<label for="other">Other</label>
+  							 	<input type="radio" name="gender" id="other" value="other">
+							</td>
+						</tr>
+					</table>
+					</div>
+				</fieldset>
+				
+				<fieldset>
+					
+					<legend>General</legend>
+	
+					<table>
+			
+						<tr>
+							<td><label id="number-label">Enter years of experience in Machine Learning:</label></td>
+							<td><input type="number"max="30" min="0" id="number" placeholder="0"></td>
+						</tr>
+						<tr>
+							<td><label>Check all that apply:</label></td>
+						<td><input type="checkbox" name="morn" value="m"> I was present in the morning.</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><input type="checkbox" name="aft" value="a"> I was present in the afternoon.</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><input type="checkbox" name="eve" value="e"> I was present in the evening.</td>
+						</tr>
+						
+						<tr>
+							<td rowspan="3"><label>Was the event useful?</label></td>
+							<td><input type="radio" name="useful" value="m"> Awesome</td>
+						</tr>
+						<tr>
+							
+							<td><input type="radio" name="useful" value="a"> Good</td>
+						</tr>
+						<tr>
+							
+							<td><input type="radio" name="useful" value="e"> Average</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><input type="radio" name="useful" value="e"> Bad</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><input type="radio" name="useful" value="e"> Very bad</td>
+						</tr>
+						
+						<tr>
+							<td><label>Did you enjoy?</label></td>
+							<td><input type="radio" name="enjoy" value="m"> Yes</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><input type="radio" name="enjoy" value="a"> No</td>
+						</tr>
+						<tr>
+					</table>
+				</fieldset>
+				
+				<label>Enter your message to us:<br></label>
+				<textarea spellcheck="true" maxlength="100" rows="10" cols="70" id="text"></textarea>
+				
+				<br>
+					
+				<input type="submit" id="submit" value="Submit">
+			</form>
+		</div>
+		
+		
+	</body>
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
