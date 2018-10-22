@@ -1,0 +1,282 @@
+<html>
+	<head>
+		<title>Python Documentation</title>
+	</head>
+	<link rel="stylesheet" href="style.css">
+	<body>
+		
+		<header id="header">
+				<h1><img src="http://icons.iconarchive.com/icons/pauloruberto/custom-round-yosemite/512/Python-icon.png" width="55" height="55"> Python Documentation</h1>
+		</header>
+		
+		<hr>
+		<nav id="navbar">
+			<header>
+				<a href="#Introduction" class="nav-link"><p>Introduction</p></a>
+				<a href="#Variables" class="nav-link"><p>variables</p></a>
+				<a href="#Python_Strings" class="nav-link">
+				<p>Python Strings</p></a>
+				<a href="#Python_Data_Structures"  class="nav-link"><p>Python Data Structures</p></a>
+				<a href="#Loops" class="nav-link"><p>Loops</p></a>
+				<a href="#Python_Classes" class="nav-link"><p>Python Classes</p></a>
+				
+			</header>
+		</nav>
+		<main id="main-doc">
+			<section class="main-section" id="Introduction">
+				<header>
+					<h1>Introduction</h1>
+				</header>
+				<p>	Python is a programming language.
+					Python can be used on a server to create web applications.</p>
+
+				<h3>What is Python?</h3>
+				Python is a popular programming language. It was created in 1991 by Guido van Rossum.
+				<p>It is used for:
+					web development (server-side), software development, mathematics, system scripting.</p>
+				<h3>What can Python do?</h3>
+				<p>Python can be used on a server to create web applications. Python can be used alongside software to create workflows. Python can connect to database systems. It can also read and modify files. Python can be used to handle big data and perform complex mathematics. Python can be used for rapid prototyping, or for production-ready software development.</p>
+				<h3>Why Python?</h3>
+				<p>Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).
+    			Python has a simple syntax similar to the English language.
+				<p>Python has syntax that allows developers to write programs with fewer lines than some other programming languages.</p>
+    			<p>Python runs on an interpreter system, meaning that code can be executed as soon as it is written. This means that prototyping can be very quick.</p>
+				<p>
+				Python can be treated in a procedural way, an object-orientated way or a functional way.</p>
+				
+				<h3>Good to know</h3>
+    			The most recent major version of Python is Python 3, which we shall be using in this tutorial. However, Python 2, although not being updated with anything other than security updates, is still quite popular.
+				<p>In this tutorial Python will be written in a text editor. It is possible to write Python in an Integrated Development Environment, such as Thonny, Pycharm, Netbeans or Eclipse which are particularly useful when managing larger collections of Python files.</p>
+
+				Python Syntax compared to other programming languages
+
+    			<ul>
+					<li>Python was designed to for readability, and has some similarities to the English language with influence from mathematics.</li>
+					<li>Python uses new lines to complete a command, as opposed to other programming languages which often use semicolons or parentheses.</li>
+					<li>Python relies on indentation, using whitespace, to define scope; such as the scope of loops, functions and classes. Other programming languages often use curly-brackets for this purpose.</li>
+				</ul>
+			</section>
+			<section class="main-section" id="Variables">
+				
+					<header>
+						<h1>Variables</h1>
+					</header>
+						<h3>Creating Variables</h3>
+
+						Unlike other programming languages, Python has no command for declaring a variable.
+				
+					<br>
+					A variable is created the moment you first assign a value to it.
+					<br>
+					Example
+					<br>
+					<code>
+					x = 5
+					y = "John"
+					print(x)
+					print(y)
+					</code>
+					Variables do not need to be declared with any particular type and can even change type after they have been set.
+					Example
+					<code>x = 4 # x is of type int
+					x = "Sally" # x is now of type str
+					print(x)
+					</code>
+					<h2>Variable Names</h2>
+					<ul>
+						<li>A variable can have a short name (like x and y) or a more descriptive name (age, carname, total_volume). Rules for Python variables:
+						</li>
+						<li>A variable name must start with a letter or the underscore character</li>
+						<li>A variable name cannot start with a number</li>
+						<li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )</li>
+    					<li>Variable names are case-sensitive (age, Age and AGE are three different variables)
+						</li>
+						Remember that variables are case-sensitive
+					</ul>
+	
+						<h3>Output Variables</h3>
+
+						The Python print statement is often used to output variables.
+
+						To combine both text and a variable, Python uses the + character:
+						Example
+						<code>x = "awesome"
+							print("Python is " + x)</code>
+
+						You can also use the + character to add a variable to another variable:<br>
+						Example:
+						<code>x = "Python is "
+						y = "awesome"
+						z =  x + y
+							print(z)</code>
+
+						For numbers, the + character works as a mathematical operator:
+						Example:
+						<code>x = 5
+						y = 10
+						print(x + y)
+						</code>
+						If you try to combine a string and a number, Python will give you an error:<br>
+						Example:
+						<code>x = 5
+						y = "John"
+						print(x + y)
+						</code>
+			</section>
+			<section class="main-section" id="Python_Strings">
+				<header>
+					<h1>Python Strings</h1>
+				</header>
+					<h3>String Literals</h3>
+
+					String literals in python are surrounded by either single quotation marks, or double quotation marks.
+	
+					<br>
+					'hello' is the same as "hello".
+					<br>
+					Strings can be output to screen using the print function. For example: print("hello").
+					<br>
+					Like many other popular programming languages, strings in Python are arrays of bytes representing unicode characters. However, Python does not have a character data type, a single character is simply a string with a length of 1. Square brackets can be used to access elements of the string.
+					<br>
+					Example
+					<br>
+					Get the character at position 1 (remember that the first character has the position 0):
+					<code>a = "Hello, World!"
+						print(a[1])
+					</code>
+
+					Get the characters from position 2 to position 5 (not included):
+					<code>b = "Hello, World!"
+						print(b[2:5])
+					</code>
+					
+
+					The strip() method removes any whitespace from the beginning or the end:
+					<code>a = " Hello, World! "
+						print(a.strip()) # returns "Hello, World!"
+					</code>
+					
+					The len() method returns the length of a string:
+					<code>a = "Hello, World!"
+						print(len(a))
+					</code>
+					
+
+					The lower() method returns the string in lower case:
+					<code>a = "Hello, World!"
+						print(a.lower())
+					</code>
+					
+
+					The upper() method returns the string in upper case:
+					<code>a = "Hello, World!"
+						print(a.upper())
+					</code>
+					
+					The replace() method replaces a string with another string:
+					<code>a = "Hello, World!"
+						print(a.replace("H", "J"))
+					</code>
+					
+
+					The split() method splits the string into substrings if it finds instances of the separator:
+					<code>a = "Hello, World!"
+						print(a.split(",")) # returns ['Hello', ' World!']
+					</code>
+					Command-line String Input
+
+					Python allows for command line input.
+
+					That means we are able to ask the user for input.
+
+					The following example asks for the user's name, then, by using the input() method, the program prints the name to the screen:
+				
+
+					<code>demo_string_input.py
+						print("Enter your name:")
+						x = input()
+						print("Hello, " + x)
+					</code>
+			</section>
+			<section class="main-section" id="Python_Data_Structures">
+				<header>
+					<h1>Python Data Structures</h1>
+				</header>
+				
+					<h3>Python Collections (Arrays)</h3>
+
+					There are four collection data types in the Python programming language:
+
+    			<br>
+				List is a collection which is ordered and changeable. Allows duplicate members.In Python lists are written with square brackets.Create a List:
+				<code>
+					thislist = ["apple", "banana", "cherry"]
+					print(thislist)
+				</code>
+				Python has a set of built-in methods that you can use on lists.
+				<br>
+				Method 	Description
+				<ul>
+					<li>append()	Adds an element at the end of the list</li>
+					<li>clear()	Removes all the elements from the list</li>
+					<li>copy()	Returns a copy of the list</li>
+					<li>count()	Returns the number of elements with the specified value</li>
+					<li>extend()	Add the elements of a list (or any iterable), to the end of the current list</li>
+					<li>index()	Returns the index of the first element with the specified value
+					</li>
+					<li>insert()	Adds an element at the specified position</li>
+					<li>pop()	Removes the element at the specified position</li>
+					<li>remove()	Removes the item with the specified value</li>
+					<li>reverse()	Reverses the order of the list</li>
+					<li>sort()	Sorts the list</li>
+				</ul>
+    			<br>
+				Tuple is a collection which is ordered and unchangeable. Allows duplicate members.
+    			<br>
+				Set is a collection which is unordered and unindexed. No duplicate members.
+    			<br>
+				Dictionary is a collection which is unordered, changeable and indexed. No duplicate members.
+
+				<br>
+				<p>When choosing a collection type, it is useful to understand the properties of that type. Choosing the right type for a particular data set could mean retention of meaning, and, it could mean an increase in efficiency or security.</p>
+			</section>
+			<section class="main-section" id="Loops">
+				<header>
+					<h1>Loops</h1>
+				</header>
+					<h3>Python For Loops</h3>
+
+					A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).
+			
+				<br>
+				This is less like the for keyword in other programming language, and works more like an iterator method as found in other object-orientated programming languages.
+				<br>
+				With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc.
+				<br>
+				Example
+				<br>
+				Print each fruit in a fruit list:
+				<code>fruits = ["apple", "banana", "cherry"]
+					for x in fruits:
+  						print(x)
+				</code>
+				The for loop does not require an indexing variable to set beforehand.
+			</section>
+			<section class="main-section" id="Python_Classes">
+				<header>
+					<h1>Python Classes</h1>
+				</header>
+					Python is an object oriented programming language.
+	
+
+				<p>
+					Almost everything in Python is an object, with its properties and methods.</p>
+				<p>
+					A Class is like an object constructor, or a "blueprint" for creating objects.</p>
+			</section>
+							
+			</main>
+		
+	</body>
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
