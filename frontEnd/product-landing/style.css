@@ -1,0 +1,157 @@
+body{
+	
+	background: url("images/bg1.jpg") no-repeat center center fixed;
+	
+	 background-size: cover;
+	opacity: 0.9;
+	
+}
+.heading{
+	font-size: 80px;
+}
+p{
+	text-align: right;
+	text-align: right;
+	display: block;
+	font-family: 'Charmonman', cursive;
+	
+	
+}
+#header-img{
+	
+	width: 70px;
+	height: 70px;
+	right: 20px;
+}
+#header{
+	position: fixed;
+	top:0;
+	left:0;
+	width:100%;
+	
+}
+.main{
+	
+	
+	background-color: rgb(0, 12, 204, 0.3);
+	
+	overflow: auto;
+	position: absolute;
+	left: 50px;
+	right: 50px;
+	bottom: 20px;
+	top: 120px;
+}
+#about{
+	text-align: right;
+	display: block;
+	font-family:  cursive;
+	font-size: 27px;
+}
+@media 
+(max-width:950px) {
+	
+	#header-img{
+		width:15px;
+		height:15px;
+	}
+	.main{
+		left: 20px;
+		right: 20px;
+		bottom: 20px;
+		top: 120px;
+	}
+	li a{
+		font-size: 10px;
+	}
+	li{
+		padding: 5px 10px;
+	}
+	img{
+		width: 50px;
+		height: 50px;
+		
+	}
+	.heading{
+		font-size: 20px;
+	}
+	iframe{
+		
+	}
+	#about{
+		font-size:20px;
+	}
+	
+}
+li a{
+	color:black;
+	text-decoration: none;
+	text-align: center;
+}
+li{
+	display:block;
+	float: right;
+	padding: 15px 25px;
+	border: 1px solid black;
+	border-radius: 50px;
+	background-color:lightsteelblue;
+	margin-left: 1px;
+}
+iframe{
+	width: 500px;
+	height: 500px;
+	position: relative;
+    overflow: hidden;
+}
+#form{
+	text-align: center;
+}
+.pricing {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+	
+	
+}
+button {
+      border: 0;
+      margin: 15px 0;
+      background-color: #f1c40f;
+      font-weight: 400;
+      
+      &:hover {
+        background-color: orange;
+        transition: background-color 1s;
+      }
+}
+ .level {
+      background-color: lightsteelblue;
+      color: black;
+      padding: 15px 0;
+      width: 100%;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+  #casuals, #night, #party, #tops, #tees, #traditional {
+	  background-color: lightsteelblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+	  width: calc(100%  / 3);
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+	}
+#vid{
+	
+	margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+  iframe {
+    max-width: 560px;
+    width: 100%;
+  }
+}
